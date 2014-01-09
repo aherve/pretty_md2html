@@ -1,3 +1,7 @@
-To build the deb package: `dpkg-deb --build pretty_md2html`
+# Installation
+build the package from sources : `./build.sh`
 
-To install the deb package: `dpkg -i pretty_md2html.deb`
+install the .deb package : `sudo ./install.sh`
+
+## Usage
+`pretty-md2html <myfile.md>` will produce a `myfile.htm`.

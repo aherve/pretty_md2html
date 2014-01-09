@@ -1,4 +1,8 @@
 #!/bin/bash
+if [[ $# -eq 0 ]] ; then
+  echo "please pass a markdown file as first agrument"
+  exit 0
+fi
 fname=$1
 base="${fname%.*}"
 
