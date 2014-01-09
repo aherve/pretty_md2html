@@ -1,0 +1,11 @@
+#!/bin/bash
+fname=$1
+base="${fname%.*}"
+
+echo "<html> <style type='text/css'>" > $base.htm
+cat /usr/share/pretty-md2html/style.css >> $base.htm
+echo "</style><body>" >> $base.htm
+echo `markdown $fname` >> $base.htm
+echo "</body></html>" >> $base.htm
+
+echo "successfully converted $fname to $base.htm"

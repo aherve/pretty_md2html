@@ -1,0 +1,8 @@
+Package: pretty-md2html
+Version: 1.0
+Section: base
+Priority: optional
+Architecture: all
+Depends: bash, markdown
+Maintainer: Aurélien Hervé <mail@aurelien-herve.com>
+Description: Convert a markdown file into html, with a simple css stylesheet
